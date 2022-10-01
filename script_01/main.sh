@@ -16,7 +16,7 @@ function get_memoinfo() {
 
 # this send the mail when called 
 function mailSender() (
-    sendmail $email < $memoryinfo
+    mail -s "Server memoryinfo for $dateinfo" $email < $memoryinfo
 )
 
 # This is a function caller that get all operation to get done
